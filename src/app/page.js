@@ -1,7 +1,12 @@
+'use client';
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useMain } from "@/contexts/global";
 
 export default function Home() {
+  const main = useMain();
+  
   return (
     <div className={styles.page}>
       <main className={styles.main}>
